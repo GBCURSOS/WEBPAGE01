@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    height: auto;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+header h1{
+    text-align: center;
+}
+
+section {
+    width: 70%;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+/* Orientación vertical (portrait) */
+@media (orientation: portrait) {
+    body {
+        background-color: #f0f8ff; /* azul claro */
+    }
+    section {
+        background-color: brown;
+    }
+}
+
+/* Orientación horizontal (landscape) */
+@media (orientation: landscape) {
+    body {
+        background-color: #ffe4b5; /* beige claro */
+    }
+    section {
+        background-color: darkgreen;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        width: 98%;
+        border-width: 0;
+    }
+    section {
+        width: 98%;
+        padding: 5px;
+    }
+}
